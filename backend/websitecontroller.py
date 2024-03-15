@@ -234,6 +234,7 @@ class WebsiteController:
         customer = Customer("oat@a","oat","0967459032","1234","customer")
         user = User("oat@a","oat","0967459032","1234","customer")
         user.role = "customer"
+        token = 1
         token_data = Token(user,token)
         self.customer_list.append(customer)
         self.token_list.append(token_data)
@@ -242,7 +243,7 @@ class WebsiteController:
         lender = Lender("tee@a","tee","0967459032","1234","lender")
         user = User("tee@a","tee","0967459032","1234","lender")
         user.role = "lender"
-
+        token = 2
         token_data = Token(user,token)
         self.token_list.append(token_data)
         self.lender_list.append(lender)
