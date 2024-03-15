@@ -33,6 +33,8 @@ templates = Jinja2Templates(directory="Frontend")
 
 site = WebsiteController()
 
+site.init_car_list()
+
 @app.get('/')
 def index(request: Request):
     return RedirectResponse(url="/docs")

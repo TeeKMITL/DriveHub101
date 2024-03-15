@@ -93,6 +93,7 @@ const CheckoutForm = () => {
     return (
         <div>
             <Navbar />
+            
             <div className="flex justify-center h-screen bg-slate-100">
 
                 <div className="w-1/2 flex mt-3 ">

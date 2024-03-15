@@ -231,19 +231,19 @@ class WebsiteController:
         return car.price
             
     def init_car_list(self):
-        customer = Customer("oat@a","oat","0967459032","1234","customer")
-        user = User("oat@a","oat","0967459032","1234","customer")
+        customer = Customer("oat@a","oat","0967459032","1234")
+        user = User("oat@a","oat","0967459032","1234")
         user.role = "customer"
-        token = 1
+        token = "1"
         token_data = Token(user,token)
         self.customer_list.append(customer)
         self.token_list.append(token_data)
         self.user_list.append(user)
 
-        lender = Lender("tee@a","tee","0967459032","1234","lender")
-        user = User("tee@a","tee","0967459032","1234","lender")
+        lender = Lender("tee@a","tee","0967459032","1234")
+        user = User("tee@a","tee","0967459032","1234")
         user.role = "lender"
-        token = 2
+        token = "2"
         token_data = Token(user,token)
         self.token_list.append(token_data)
         self.lender_list.append(lender)
