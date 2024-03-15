@@ -231,6 +231,7 @@ class WebsiteController:
         return car.price
             
     def init_car_list(self):
+        self.create_coupon("TEST100",100)
         customer = Customer("oat@a","oat","0967459032","1234")
         user = User("oat@a","oat","0967459032","1234")
         user.role = "customer"
